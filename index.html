@@ -88,10 +88,10 @@
         console.log(prediction[0].probability);
         if(prediction[0].probability > 0.5){
           console.log('day');
-          SetTime--;
+          
         } else {
           console.log('night');
-          setTimeout(tid);
+          clearInterval(tid);
         }
     }
     init();
